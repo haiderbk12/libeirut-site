@@ -1,75 +1,141 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>مركز ليبيروت لطب الأسنان</title>
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f5f5f5;
-            margin: 0;
-            padding: 0;
-            direction: rtl;
-            text-align: center;
-        }
-        header {
-            padding: 20px;
-            background-color: white;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-        header img {
-            width: 250px;
-        }
-        nav {
-            background-color: #003366;
-            padding: 15px 0;
-        }
-        nav a {
-            margin: 0 20px;
-            text-decoration: none;
-            color: white;
-            font-size: 18px;
-            font-weight: bold;
-            transition: color 0.3s;
-        }
-        nav a:hover {
-            color: #20C997;
-        }
-        .social {
-            margin: 30px 0;
-        }
-        .social a {
-            margin: 0 10px;
-            text-decoration: none;
-            color: #003366;
-            font-size: 30px;
-            transition: color 0.3s;
-        }
-        .social a:hover {
-            color: #20C997;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>مركز ليبيروت لطب الأسنان</title>
+
+  <!-- Font Awesome CDN للأيقونات -->
+  <script
+    src="https://kit.fontawesome.com/a076d05399.js"
+    crossorigin="anonymous"
+    defer
+  ></script>
+
+  <style>
+    /* Reset بسيط */
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Arial", sans-serif;
+      background-color: #f5f5f5;
+      margin: 0;
+      padding: 0;
+      direction: rtl;
+      text-align: center;
+      color: #003366;
+    }
+
+    header {
+      padding: 25px 0;
+      background-color: white;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    header img {
+      width: 250px;
+      max-width: 90%;
+      height: auto;
+    }
+
+    nav {
+      background-color: #003366;
+      padding: 15px 0;
+    }
+
+    nav a {
+      margin: 0 20px;
+      text-decoration: none;
+      color: white;
+      font-size: 18px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #20c997;
+    }
+
+    .social {
+      margin: 40px 0;
+    }
+
+    .social a {
+      margin: 0 15px;
+      color: #003366;
+      font-size: 40px;
+      transition: color 0.3s, transform 0.3s;
+      display: inline-block;
+    }
+
+    .social a:hover {
+      color: #20c997;
+      transform: scale(1.2);
+    }
+
+    /* متجاوب للشاشات الصغيرة */
+    @media (max-width: 480px) {
+      nav a {
+        margin: 0 10px;
+        font-size: 16px;
+      }
+
+      .social a {
+        font-size: 32px;
+        margin: 0 10px;
+      }
+
+      header img {
+        width: 180px;
+      }
+    }
+  </style>
 </head>
 <body>
+  <header>
+    <img
+      src="libeirut logo -04.jpg"
+      alt="شعار مركز ليبيروت لطب الأسنان"
+    />
+  </header>
 
-    <header>
-        <img src="libeirut logo -04.jpg" alt="شعار مركز ليبيروت لطب الأسنان">
-    </header>
+  <nav>
+    <a href="#">الصفحة الرئيسية</a>
+    <a href="#">خدماتنا</a>
+    <a href="#">اتصل بنا</a>
+  </nav>
 
-    <nav>
-        <a href="#">الصفحة الرئيسية</a>
-        <a href="#">خدماتنا</a>
-        <a href="#">اتصل بنا</a>
-    </nav>
-
-    <div class="social">
-        <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="https://wa.me" target="_blank"><i class="fab fa-whatsapp"></i></a>
-        <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
-        <a href="https://www.tiktok.com" target="_blank"><i class="fab fa-tiktok"></i></a>
-    </div>
-
+  <div class="social">
+    <a
+      href="https://www.instagram.com/yourpage"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Instagram"
+      ><i class="fab fa-instagram"></i
+    ></a>
+    <a
+      href="https://wa.me/9647800000000"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="WhatsApp"
+      ><i class="fab fa-whatsapp"></i
+    ></a>
+    <a
+      href="https://www.facebook.com/yourpage"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Facebook"
+      ><i class="fab fa-facebook"></i
+    ></a>
+    <a
+      href="https://www.tiktok.com/@yourpage"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="TikTok"
+      ><i class="fab fa-tiktok"></i
+    ></a>
+  </div>
 </body>
 </html>
